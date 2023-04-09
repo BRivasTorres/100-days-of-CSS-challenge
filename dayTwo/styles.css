@@ -1,3 +1,8 @@
+* {
+    text-decoration: none;
+
+}
+
 :root {
     --background-1: radial-gradient(circle, rgba(140, 240, 160, 1) 0%, rgba(189, 192, 255, 1) 100%);
     --background-2: linear-gradient(357deg, rgba(2, 15, 255, 0.7959558823529411) 2%, rgba(255, 0, 245, 1) 100%);
@@ -5,12 +10,26 @@
 
 body {
     background: var(--background-1);
-    height: 75vh;
+    height: 100vh;
     background-size: cover;
-    animation: changeBackground 5s linear 2s infinite alternate none;
-    /* transition-duration: 2000ms; */
+    animation: changeBackground 3s linear 2s infinite alternate none;
 }
 
+.info {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.info a {
+    text-decoration: none;
+    color: transparent;
+    background: var(--background-2);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 
 .wrapper {
     background: var(--background-2);
@@ -18,13 +37,13 @@ body {
     width: 400px;
     height: 400px;
     max-width: 80%;
-    margin: 250px auto;
+    margin: 200px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    animation: changeBackground1 5s linear 2s infinite alternate none;
+    animation: changeBackground1 3s linear 2s infinite alternate none;
 }
 
 .line1 {
@@ -32,7 +51,7 @@ body {
     height: 10px;
     background: var(--background-1);
     border-radius: 5px;
-    animation: changeBackground 5s linear 2s infinite alternate none;
+    animation: changeBackground 3s linear 2s infinite alternate none;
 }
 
 .line2 {
@@ -40,7 +59,7 @@ body {
     height: 10px;
     background: var(--background-1);
     border-radius: 5px;
-    animation: changeBackground 5s linear 2s infinite alternate none;
+    animation: changeBackground 3s linear 2s infinite alternate none;
 }
 
 .line3 {
@@ -48,7 +67,7 @@ body {
     height: 10px;
     background: var(--background-1);
     border-radius: 5px;
-    animation: changeBackground 5s linear 2s infinite alternate none;
+    animation: changeBackground 3s linear 2s infinite alternate none;
 }
 
 @keyframes changeBackground {
