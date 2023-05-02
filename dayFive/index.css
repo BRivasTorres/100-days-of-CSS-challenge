@@ -4,6 +4,9 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .frame {
@@ -56,12 +59,61 @@
     height: 70%;
 }
 
-.line::before {
+.main__text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.line1::before {
     content: "-";
     display: inline-block;
     margin: 0 auto;
     width: 10px;
     height: 10px;
     color: red;
-    /* background-color: red; */
+}
+
+.line2::before {
+    content: "-";
+    display: inline-block;
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    color: skyblue;
+}
+
+.lines {
+    width: 100%;
+}
+
+.lines-styles {
+    margin: 2rem 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(211, 227, 241);
+}
+
+.stadistic-lines1 {
+    position: absolute;
+    right: 10%;
+    top: 62%;
+    width: 80%;
+    height: 3px;
+    background-color: red;
+}
+
+.stadistic-lines2 {
+    position: absolute;
+    right: 10%;
+    top: 66%;
+    width: 80%;
+    height: 3px;
+    background-color: skyblue;
+}
+
+.days>ul {
+    display: flex;
+    justify-content: space-evenly;
 }
