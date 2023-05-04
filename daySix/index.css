@@ -55,7 +55,6 @@
 }
 
 .main {
-    border: 1px solid red;
     width: 60%;
 }
 
@@ -91,4 +90,32 @@
     color: #fff;
     background-color: #786450;
     cursor: pointer;
+}
+
+.main__follow {
+    margin: 2rem auto .8rem auto;
+}
+
+.aside {
+    background-color: #f5e8df;
+    width: 40%;
+}
+
+.box {
+    height: 33%;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box span:first-of-type {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.follower {
+    border: none;
 }
