@@ -3,6 +3,8 @@ const labelSerach = document.querySelector(".nav__search")
 const menuBtn = document.querySelector(".nav__menu-btn")
 const navTitle = document.querySelector(".nav__title")
 
+const menuNavBtn = document.querySelector(".nav__menu-btn")
+
 searchBtn.addEventListener("click", () => {
     if(labelSerach.style.display === "none") {
         labelSerach.style.display = "block"
@@ -13,4 +15,8 @@ searchBtn.addEventListener("click", () => {
         menuBtn.style.display = "block"
         navTitle.style.display = "block"
     }
+})
+
+menuNavBtn.addEventListener("click", () => {
+      
 })
