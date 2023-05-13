@@ -35,7 +35,6 @@
     transform: translate(-50%, -50%);
     width: 300px;
     height: 300px;
-    border: 1px solid red;
 }
 
 .nav {
@@ -46,12 +45,19 @@
     padding: .5rem 1.5rem;
     height: 25%;
     color: #fff;
+    position: relative;
+    transition: all 1s ease-in-out;
 }
 
 .nav__menu-btn {
     width: 40px;
     height: 20px;
-    /* border: 1px solid red; */
+}
+
+.nav__menu-btn:hover * {
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 .menu-btn {
@@ -88,6 +94,12 @@
     font-size: 1.6rem;
 }
 
+.nav__search-btn:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
 .nav__search {
     display: none;
     background-color: #fff;
@@ -100,29 +112,36 @@
     border-radius: 100px;
     padding: 1rem;
     margin: 0 1rem 0 0;
-    transition: 2s;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav__menu {
-    /* display: none; */
-    border: 1px solid red;
+    display: none;
     position: absolute;
     top: 8%;
-    left: 0%;
+    left: 5%;
     width: 200px;
     height: 250px;
     background-color: rgb(67, 98, 125);
     color: #93b2cd;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 2s ease-in-out;
 }
 
 .nav__menu ul {
-    border: 1px solid green;
     height: 100%;
+    margin: 10px 0;
 }
 
 .nav__menu li {
-    /* border: 1px solid green; */
-    margin: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+}
+
+.nav__menu li i {
+    margin: 0 10px 0 0;
 }
 
 .nav__menu li:hover {
@@ -140,8 +159,11 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 0 0 0 3.5rem;
+    position: relative;
+    transition: all 1s ease-in-out;
 }
 
-.hero i {
+.hero>div:hover * {
     color: #5f98cd;
+    cursor: pointer;
 }
