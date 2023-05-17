@@ -40,23 +40,24 @@
     animation: rotate 4s linear infinite;
 }
 
-
 @keyframes rotate {
     0% {
-        position: absolute;
-        top: 10%;
-        left: 10%;
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform: translateX(50px) translateY(100px);
     }
 
     50% {
-        position: absolute;
-        top: 30%;
-        left: 30%;
+        transform: translateX(200px) translateY(0);
+    }
+
+    75% {
+        transform: translateX(100px) translateY(-200px);
     }
 
     100% {
-        position: absolute;
-        top: 0%;
-        left: 0%;
+        transform: translateX(0) translateY(0);
     }
 }
